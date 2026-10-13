@@ -1,0 +1,15 @@
+# Local Python environment
+.venv/
+__pycache__/
+*.py[cod]
+.Python
+*.egg-info/
+.pytest_cache/
+
+# Personal voice, projects, uploads, and preferences
+data/
+
+# macOS and editors
+.DS_Store
+.idea/
+.vscode/

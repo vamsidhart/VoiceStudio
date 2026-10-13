@@ -1,0 +1,20 @@
+[project]
+name = "voice-studio"
+version = "1.0.0"
+description = "Local voiceover studio for scripts, narration, captions, and simple demo video."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.110,<1",
+  "uvicorn>=0.27,<1",
+  "python-multipart>=0.0.9",
+]
+
+[project.scripts]
+voice-studio = "voice_studio.run:main"
+
+[tool.setuptools.packages.find]
+include = ["voice_studio*"]
+
+[tool.setuptools.package-data]
+voice_studio = ["static/*"]

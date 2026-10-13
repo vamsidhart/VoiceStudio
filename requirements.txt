@@ -1,0 +1,8 @@
+# Web interface only.
+# The speech stack (torch, torchaudio, chatterbox-tts, resemble-perth, gradio,
+# soundfile, numpy, pillow, psutil) is already installed in .venv.
+# Do not upgrade torch, chatterbox-tts, or resemble-perth unless you intend
+# to re-test generation on this Mac.
+fastapi>=0.110,<1
+uvicorn>=0.27,<1
+python-multipart>=0.0.9
